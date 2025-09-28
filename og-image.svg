@@ -1,0 +1,143 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc"/>
+      <stop offset="100%" style="stop-color:#e0f2fe"/>
+    </linearGradient>
+    
+    <linearGradient id="birdGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669"/>
+      <stop offset="100%" style="stop-color:#10b981"/>
+    </linearGradient>
+    
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ea580c"/>
+      <stop offset="100%" style="stop-color:#f97316"/>
+    </linearGradient>
+    
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669"/>
+      <stop offset="100%" style="stop-color:#10b981"/>
+    </linearGradient>
+    
+    <!-- Pattern -->
+    <pattern id="dotPattern" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+      <circle cx="30" cy="30" r="2" fill="#059669" opacity="0.1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Pattern overlay -->
+  <rect width="1200" height="630" fill="url(#dotPattern)"/>
+  
+  <!-- Main content container -->
+  <g transform="translate(100, 100)">
+    
+    <!-- WeaverBird Logo (left side) -->
+    <g transform="translate(0, 50)">
+      <!-- Bird Body -->
+      <ellipse cx="100" cy="120" rx="45" ry="30" fill="url(#birdGradient)" opacity="0.9"/>
+      
+      <!-- Bird Head -->
+      <circle cx="100" cy="80" r="25" fill="url(#birdGradient)"/>
+      
+      <!-- Beak -->
+      <polygon points="115,75 135,80 115,85" fill="url(#accentGradient)"/>
+      
+      <!-- Eye -->
+      <circle cx="105" cy="75" r="4" fill="white"/>
+      <circle cx="107" cy="73" r="2" fill="#374151"/>
+      
+      <!-- Wing -->
+      <ellipse cx="85" cy="110" rx="20" ry="25" fill="url(#birdGradient)" opacity="0.7" transform="rotate(-20 85 110)"/>
+      
+      <!-- Tail feathers -->
+      <ellipse cx="65" cy="130" rx="15" ry="8" fill="url(#birdGradient)" opacity="0.6" transform="rotate(-30 65 130)"/>
+      <ellipse cx="70" cy="140" rx="12" ry="6" fill="url(#accentGradient)" opacity="0.7" transform="rotate(-40 70 140)"/>
+      
+      <!-- Weaving pattern lines -->
+      <path d="M40 160 Q60 150 80 160 Q100 170 120 160 Q140 150 160 160" stroke="url(#birdGradient)" stroke-width="3" fill="none" opacity="0.6"/>
+      <path d="M35 170 Q55 160 75 170 Q95 180 115 170 Q135 160 155 170" stroke="url(#accentGradient)" stroke-width="2" fill="none" opacity="0.5"/>
+      <path d="M45 180 Q65 170 85 180 Q105 190 125 180 Q145 170 165 180" stroke="url(#birdGradient)" stroke-width="2" fill="none" opacity="0.4"/>
+    </g>
+    
+    <!-- Text content (right side) -->
+    <g transform="translate(250, 60)">
+      
+      <!-- Brand name -->
+      <text x="0" y="60" font-family="Inter, system-ui, sans-serif" font-size="64" font-weight="800" fill="#374151">
+        WeaverBird
+      </text>
+      
+      <!-- Main headline -->
+      <text x="0" y="140" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="700" fill="#374151">
+        Visual <tspan fill="url(#textGradient)">Microservice</tspan>
+      </text>
+      <text x="0" y="190" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="700" fill="#374151">
+        Design Platform
+      </text>
+      
+      <!-- Tagline -->
+      <text x="0" y="250" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="400" fill="#374151" opacity="0.8">
+        Transform how you build, deploy, and manage
+      </text>
+      <text x="0" y="285" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="400" fill="#374151" opacity="0.8">
+        microservice architectures.
+      </text>
+      
+      <!-- Features -->
+      <g transform="translate(0, 340)">
+        <g transform="translate(0, 0)">
+          <circle cx="12" cy="12" r="8" fill="url(#birdGradient)"/>
+          <text x="35" y="18" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="500" fill="#374151">Visual Design</text>
+        </g>
+        <g transform="translate(200, 0)">
+          <circle cx="12" cy="12" r="8" fill="url(#birdGradient)"/>
+          <text x="35" y="18" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="500" fill="#374151">Code Generation</text>
+        </g>
+        <g transform="translate(400, 0)">
+          <circle cx="12" cy="12" r="8" fill="url(#birdGradient)"/>
+          <text x="35" y="18" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="500" fill="#374151">Infrastructure</text>
+        </g>
+      </g>
+      
+      <!-- Call to action -->
+      <g transform="translate(0, 400)">
+        <rect x="0" y="0" width="280" height="60" rx="12" fill="url(#birdGradient)"/>
+        <text x="140" y="40" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="600" fill="white" text-anchor="middle">
+          Join Early Access →
+        </text>
+      </g>
+      
+    </g>
+    
+    <!-- Beta badge (top right) -->
+    <g transform="translate(750, 20)">
+      <rect x="0" y="0" width="150" height="40" rx="20" fill="url(#accentGradient)"/>
+      <text x="75" y="28" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="white" text-anchor="middle">
+        Coming Q1 2026
+      </text>
+    </g>
+    
+  </g>
+  
+  <!-- Decorative elements -->
+  <g opacity="0.3">
+    <!-- Connection lines representing microservices -->
+    <path d="M950 150 Q1050 200 1150 150" stroke="url(#birdGradient)" stroke-width="3" fill="none"/>
+    <path d="M950 250 Q1050 300 1150 250" stroke="url(#birdGradient)" stroke-width="3" fill="none"/>
+    <path d="M950 350 Q1050 400 1150 350" stroke="url(#birdGradient)" stroke-width="3" fill="none"/>
+    
+    <!-- Nodes -->
+    <circle cx="950" cy="150" r="8" fill="url(#birdGradient)"/>
+    <circle cx="1150" cy="150" r="8" fill="url(#accentGradient)"/>
+    <circle cx="950" cy="250" r="8" fill="url(#accentGradient)"/>
+    <circle cx="1150" cy="250" r="8" fill="url(#birdGradient)"/>
+    <circle cx="950" cy="350" r="8" fill="url(#birdGradient)"/>
+    <circle cx="1150" cy="350" r="8" fill="url(#accentGradient)"/>
+  </g>
+  
+</svg>

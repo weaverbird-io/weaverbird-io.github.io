@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="840" height="840" viewBox="0 0 840 840" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient for the bird body -->
+    <linearGradient id="birdGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradient for the weaving pattern -->
+    <linearGradient id="weavingGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6ee7b7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Accent gradient -->
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ea580c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle (transparent) -->
+  <circle cx="420" cy="420" r="406" fill="none" stroke="#f1f5f9" stroke-width="28"/>
+  
+  <!-- Weaving pattern -->
+  <g opacity="0.3">
+    <!-- Horizontal weaving lines -->
+    <path d="M140 280 Q245 245 350 280 Q455 315 560 280 Q665 245 770 280" 
+          stroke="url(#weavingGradient)" stroke-width="14" fill="none"/>
+    <path d="M105 385 Q210 350 315 385 Q420 420 525 385 Q630 350 735 385" 
+          stroke="url(#weavingGradient)" stroke-width="14" fill="none"/>
+    <path d="M140 490 Q245 455 350 490 Q455 525 560 490 Q665 455 770 490" 
+          stroke="url(#weavingGradient)" stroke-width="14" fill="none"/>
+    <path d="M105 595 Q210 560 315 595 Q420 630 525 595 Q630 560 735 595" 
+          stroke="url(#weavingGradient)" stroke-width="14" fill="none"/>
+    
+    <!-- Vertical weaving lines -->
+    <path d="M245 140 Q210 245 245 350 Q280 455 245 560 Q210 665 245 770" 
+          stroke="url(#weavingGradient)" stroke-width="14" fill="none"/>
+    <path d="M385 105 Q350 210 385 315 Q420 420 385 525 Q350 630 385 735" 
+          stroke="url(#weavingGradient)" stroke-width="14" fill="none"/>
+    <path d="M525 140 Q490 245 525 350 Q560 455 525 560 Q490 665 525 770" 
+          stroke="url(#weavingGradient)" stroke-width="14" fill="none"/>
+  </g>
+  
+  <!-- Connection nodes -->
+  <circle cx="175" cy="175" r="21" fill="url(#accentGradient)" opacity="0.8"/>
+  <circle cx="665" cy="175" r="21" fill="url(#accentGradient)" opacity="0.8"/>
+  <circle cx="175" cy="665" r="21" fill="url(#accentGradient)" opacity="0.8"/>
+  <circle cx="665" cy="665" r="21" fill="url(#accentGradient)" opacity="0.8"/>
+  
+  <!-- Connecting lines from center to nodes (UNDER the bird) -->
+  <line x1="420" y1="420" x2="175" y2="175" stroke="#059669" stroke-width="7" opacity="0.3"/>
+  <line x1="420" y1="420" x2="665" y2="175" stroke="#059669" stroke-width="7" opacity="0.3"/>
+  <line x1="420" y1="420" x2="175" y2="665" stroke="#059669" stroke-width="7" opacity="0.3"/>
+  <line x1="420" y1="420" x2="665" y2="665" stroke="#059669" stroke-width="7" opacity="0.3"/>
+  
+  <!-- Bird silhouette (2x bigger than previous version) -->
+  <g transform="translate(420, 420)">
+    <!-- Bird body (2x bigger: 126x84 → 252x168) -->
+    <ellipse cx="0" cy="70" rx="252" ry="168" fill="url(#birdGradient)"/>
+    
+    <!-- Bird head (2x bigger: 56px → 112px radius) -->
+    <circle cx="-112" cy="-112" r="112" fill="url(#birdGradient)"/>
+    
+    <!-- Bird beak (2x bigger) -->
+    <path d="M-210 -112 L-280 -84 L-210 -56 Z" fill="url(#accentGradient)"/>
+    
+    <!-- Bird eye (2x bigger) -->
+    <circle cx="-140" cy="-140" r="28" fill="white"/>
+    <circle cx="-126" cy="-140" r="14" fill="#374151"/>
+    
+    <!-- Bird wings (2x bigger, representing distributed/flying nature) -->
+    <path d="M-70 0 Q-210 -70 -280 0 Q-210 70 -70 112 Q0 70 -70 0 Z" 
+          fill="url(#birdGradient)" opacity="0.8"/>
+    <path d="M70 28 Q210 -42 280 28 Q210 98 70 140 Q0 98 70 28 Z" 
+          fill="url(#birdGradient)" opacity="0.8"/>
+    
+    <!-- Tail feathers (2x bigger) -->
+    <path d="M168 112 Q280 140 350 210 Q280 168 210 168 Q168 140 168 112 Z" 
+          fill="url(#accentGradient)" opacity="0.7"/>
+    <path d="M210 140 Q322 168 392 238 Q322 196 252 196 Q210 168 210 140 Z" 
+          fill="url(#accentGradient)" opacity="0.5"/>
+  </g>
+</svg>
